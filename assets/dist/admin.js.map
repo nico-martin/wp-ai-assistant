@@ -1,1 +1,0 @@
-{"version":3,"file":"admin.js","mappings":";;;;AAAA,OAAO,CAAC,GAAG,CAAC,4BAA4B,CAAC,CAAC","sources":["webpack://wp-ai-assistant/./assets/src/admin/index.ts"],"sourcesContent":["console.log('Hello from the admin side!');\n"],"names":[],"sourceRoot":""}

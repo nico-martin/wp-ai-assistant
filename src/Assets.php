@@ -6,9 +6,10 @@ class Assets
 {
     public function run()
     {
-        add_action('wp_head', [$this, 'uiJsVars']);
-        add_action('wp_enqueue_scripts', [$this, 'addAssets']);
-        add_action('admin_enqueue_scripts', [$this, 'addAdminAssets']);
+        //add_action('wp_head', [$this, 'uiJsVars']);
+        //add_action('wp_enqueue_scripts', [$this, 'addAssets']);
+        //add_action('admin_enqueue_scripts', [$this, 'addAdminAssets']);
+        add_action('enqueue_block_editor_assets', [$this, 'addEditorAssets']);
     }
 
     public function uiJsVars()
@@ -122,5 +123,18 @@ class Assets
         $vars = json_encode(apply_filters('wpaia/Assets/AdminFooterJS', $defaults));
 
         wp_add_inline_script(wpAIAssistant()->prefix . '-admin-script', "var wpaiaJsVars = {$vars};", 'before');
+    }
+    public function addEditorAssets()
+    {
+        $script_version = wpAIAssistant()->version;
+        $dir_uri = trailingslashit(plugin_dir_url(wpAIAssistant()->file));
+
+        wp_enqueue_script(
+            wpAIAssistant()->prefix . '-editor-assets-script',
+            $dir_uri . 'assets/dist/editorAssets.js', // Update with your script path
+            [ 'wp-plugins', 'wp-edit-post', 'wp-element', 'wp-components', 'wp-i18n' ],
+            $script_version,
+            true
+        );
     }
 }

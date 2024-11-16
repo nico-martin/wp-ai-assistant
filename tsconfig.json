@@ -1,28 +1,30 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react",
-    "jsxFactory": "React.createElement",
-    "esModuleInterop": true,
-    "baseUrl": "./",
+    "target": "es2018",
+    "module": "es6",
+    "strict": true,
+    "removeComments": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "paths": {
-      "@comp/*": [
-        "src/admin/components/*"
-      ],
-      "@utils/*": [
-        "src/admin/utils/*"
-      ],
-      "@theme": [
-        "src/admin/theme/index.ts"
-      ],
-      "@types": [
-        "src/admin/@types/*"
-      ]
-    },
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "declaration": false,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "jsx": "react",
+    "jsxFactory": "wp.element.createElement",
+    "jsxFragmentFactory": "wp.element.Fragment",
+    "sourceMap": true,
+    "noLib": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types",
       "src/@types"
