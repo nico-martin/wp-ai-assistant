@@ -96,8 +96,16 @@ const ParagraphRewriter = ({ value, onChange }) => {
               <Button isSecondary onClick={() => setIsModalOpen(false)}>
                 Cancel
               </Button>
-              <Button isPrimary onClick={applyChanges}>
-                Apply
+              <Button
+                className={styles.rewriteButton}
+                isPrimary
+                onClick={applyChanges}
+              >
+                <Icon
+                  className={styles.rewriteButtonIcon}
+                  icon={IconName.CREATION}
+                />
+                Rewrite
               </Button>
             </div>
           </div>

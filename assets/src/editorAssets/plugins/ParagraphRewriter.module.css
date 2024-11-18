@@ -32,3 +32,13 @@
   margin: 1rem 0 !important;
   border-radius: 0.5em;
 }
+
+.rewriteButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.rewriteButtonIcon {
+  scale: 1.2;
+}

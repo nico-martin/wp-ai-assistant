@@ -1,10 +1,11 @@
 {
-  "name": "wp-ai-assistant",
+  "name": "wp-on-device-ai-assistant",
   "version": "1.3.3",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "prod": "webpack --mode production"
   },
+  "license": "MIT",
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/node": "18.11.18",
@@ -34,7 +35,11 @@
     "react-dom": "^18.3.1",
     "showdown": "^2.1.0"
   },
-  "author": "Nico Martin",
+  "author": "Nico Martin <mail@nico.dev>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nico-martin/wp-ai-assistant.git"
+  },
   "babel": {
     "presets": [
       "@babel/preset-env"

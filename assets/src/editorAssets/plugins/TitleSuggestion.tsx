@@ -36,7 +36,7 @@ const TitleSuggestion = () => {
                   'You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line and without any styling or formatting.'
                 );
 
-                const response = await llm.prompt('Blogpost:\n\n' + content);
+                const response = await llm.prompt('POST:\n\n' + content);
                 console.log(response);
 
                 const suggestions = response.split('\n').filter(Boolean);
@@ -54,7 +54,7 @@ const TitleSuggestion = () => {
               className={styles.generateButtonIcon}
               icon={IconName.CREATION}
             />{' '}
-            {loading ? 'generating...' : 'Generate Title suggestions'}
+            {loading ? 'generating...' : 'Generate title suggestions'}
           </Button>
         </ButtonGroup>
         <ul className={styles.titleList}>

@@ -188,14 +188,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sotOC6st9lEL2DPJ1u_V {
   margin: 1rem 0 !important;
   border-radius: 0.5em;
 }
-`, "",{"version":3,"sources":["webpack://./assets/src/editorAssets/plugins/ParagraphRewriter.module.css"],"names":[],"mappings":"AAAA;EACE,UAAU;AACZ;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,yBAAyB;EACzB,UAAU;AACZ;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,yBAAyB;EACzB,cAAc;EACd,wBAAwB;EACxB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,oCAAoC;EACpC,cAAc;EACd,0CAA0C;EAC1C,YAAY;EACZ,yBAAyB;EACzB,oBAAoB;AACtB","sourcesContent":[".toolbarIcon {\n  scale: 1.5;\n}\n\n.modal {\n  width: 400px;\n}\n\n.controls {\n  margin-top: 1rem;\n  display: flex;\n  justify-content: flex-end;\n  gap: 0.5em;\n}\n\n.contextLabel {\n  font-size: 11px;\n  font-weight: 500;\n  line-height: 1.4;\n  text-transform: uppercase;\n  display: block;\n  margin-bottom: calc(8px);\n  padding: 0;\n}\n\n.context {\n  display: block;\n  border: rgb(117, 117, 117) 1px solid;\n  color: #3c434a;\n  background-color: rgba(117, 117, 117, 0.1);\n  padding: 1em;\n  margin: 1rem 0 !important;\n  border-radius: 0.5em;\n}\n"],"sourceRoot":""}]);
+
+.cHp1WFS1rCQFznmFaNgg {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.eVHI_5Y59cJUKiXiIwK6 {
+  scale: 1.2;
+}
+`, "",{"version":3,"sources":["webpack://./assets/src/editorAssets/plugins/ParagraphRewriter.module.css"],"names":[],"mappings":"AAAA;EACE,UAAU;AACZ;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,yBAAyB;EACzB,UAAU;AACZ;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,yBAAyB;EACzB,cAAc;EACd,wBAAwB;EACxB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,oCAAoC;EACpC,cAAc;EACd,0CAA0C;EAC1C,YAAY;EACZ,yBAAyB;EACzB,oBAAoB;AACtB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,UAAU;AACZ;;AAEA;EACE,UAAU;AACZ","sourcesContent":[".toolbarIcon {\n  scale: 1.5;\n}\n\n.modal {\n  width: 400px;\n}\n\n.controls {\n  margin-top: 1rem;\n  display: flex;\n  justify-content: flex-end;\n  gap: 0.5em;\n}\n\n.contextLabel {\n  font-size: 11px;\n  font-weight: 500;\n  line-height: 1.4;\n  text-transform: uppercase;\n  display: block;\n  margin-bottom: calc(8px);\n  padding: 0;\n}\n\n.context {\n  display: block;\n  border: rgb(117, 117, 117) 1px solid;\n  color: #3c434a;\n  background-color: rgba(117, 117, 117, 0.1);\n  padding: 1em;\n  margin: 1rem 0 !important;\n  border-radius: 0.5em;\n}\n\n.rewriteButton {\n  display: flex;\n  align-items: center;\n  gap: 0.5em;\n}\n\n.rewriteButtonIcon {\n  scale: 1.2;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"toolbarIcon": `sotOC6st9lEL2DPJ1u_V`,
 	"modal": `DrKFYh_eB342pMvAqB8H`,
 	"controls": `On1d5eAucQBry36cWKwV`,
 	"contextLabel": `wrR0imGudXxRz7LE7gG5`,
-	"context": `t90AcysHEv45AZj2VNDi`
+	"context": `t90AcysHEv45AZj2VNDi`,
+	"rewriteButton": `cHp1WFS1rCQFznmFaNgg`,
+	"rewriteButtonIcon": `eVHI_5Y59cJUKiXiIwK6`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1135,7 +1147,9 @@ const ParagraphRewriter = ({ value, onChange }) => {
                 wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, { ref: textareaRef, label: "Instructions:", value: newContent, onChange: (value) => setNewContent(value), rows: 2 }),
                 wp.element.createElement("div", { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].controls },
                     wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { isSecondary: true, onClick: () => setIsModalOpen(false) }, "Cancel"),
-                    wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { isPrimary: true, onClick: applyChanges }, "Apply")))))));
+                    wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].rewriteButton, isPrimary: true, onClick: applyChanges },
+                        wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].rewriteButtonIcon, icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }),
+                        "Rewrite")))))));
 };
 (0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.registerFormatType)('wpaia/paragraph-rewriter', {
     title: 'AI Paragraph Rewriter',
@@ -1192,7 +1206,7 @@ const TitleSuggestion = () => {
                                 .content.toString()
                                 .replace(/<!--.*?-->/gs, '');
                             const llm = new _common_Llm__WEBPACK_IMPORTED_MODULE_4__["default"]('You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line and without any styling or formatting.');
-                            const response = await llm.prompt('Blogpost:\n\n' + content);
+                            const response = await llm.prompt('POST:\n\n' + content);
                             console.log(response);
                             const suggestions = response.split('\n').filter(Boolean);
                             setTitles(suggestions);
@@ -1206,7 +1220,7 @@ const TitleSuggestion = () => {
                     } },
                     wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_5__["default"], { className: _TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].generateButtonIcon, icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_6__.IconName.CREATION }),
                     ' ',
-                    loading ? 'generating...' : 'Generate Title suggestions')),
+                    loading ? 'generating...' : 'Generate title suggestions')),
             wp.element.createElement("ul", { className: _TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].titleList }, titles.map((title) => (wp.element.createElement("li", { className: _TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].titleListItem },
                 wp.element.createElement("button", { className: _TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].titleListButton, onClick: () => {
                         wp.data.dispatch('core/editor').editPost({ title });

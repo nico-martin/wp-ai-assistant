@@ -6,7 +6,6 @@ import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
 import styles from './WritingAssistantBlock.module.css';
 import Llm from '../common/Llm';
-import { insert } from '@wordpress/rich-text';
 
 const Edit = ({ attributes, setAttributes, clientId }) => {
   const blockProps = useBlockProps();
