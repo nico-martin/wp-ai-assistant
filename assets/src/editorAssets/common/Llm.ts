@@ -15,13 +15,13 @@ class Llm {
 
   public prompt = async (text: string): Promise<string> => {
     // @ts-ignore
-    if (!ai) {
+    if (!window?.ai?.languageModel) {
       throw new Error('The Prompt API is not available');
     }
 
     if (!this.session) {
       // @ts-ignore
-      this.session = await ai.languageModel.create({
+      this.session = await window.ai.languageModel.create({
         systemPrompt: this.systemPrompt,
       });
       this.messages = [
