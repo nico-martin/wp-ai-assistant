@@ -6,6 +6,7 @@ import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
 import styles from './WritingAssistantBlock.module.css';
 import Llm from '../common/Llm';
+import isPromptApiAvailable from '../common/isPromptApiAvailable';
 
 const Edit = ({ attributes, setAttributes, clientId }) => {
   const blockProps = useBlockProps();
@@ -78,17 +79,19 @@ const Save = ({ attributes }) => (
   <RichText.Content tagName="p" value={attributes.content} />
 );
 
-registerBlockType('wpaia/ai-writing-assistant', {
-  title: 'AI Writing Assistant',
-  category: 'text',
-  icon: () => <Icon icon={IconName.CREATION} />,
-  attributes: {
-    content: {
-      type: 'string',
-      source: 'html',
-      selector: 'p',
+if (isPromptApiAvailable()) {
+  registerBlockType('wpaia/ai-writing-assistant', {
+    title: 'AI Writing Assistant',
+    category: 'text',
+    icon: () => <Icon icon={IconName.CREATION} />,
+    attributes: {
+      content: {
+        type: 'string',
+        source: 'html',
+        selector: 'p',
+      },
     },
-  },
-  edit: Edit,
-  save: Save,
-});
+    edit: Edit,
+    save: Save,
+  });
+}

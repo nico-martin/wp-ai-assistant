@@ -12,6 +12,7 @@ import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
 import styles from './ParagraphRewriter.module.css';
 import Llm from '../common/Llm';
+import isPromptApiAvailable from '../common/isPromptApiAvailable';
 
 const ParagraphRewriter = ({ value, onChange }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -115,11 +116,13 @@ const ParagraphRewriter = ({ value, onChange }) => {
   );
 };
 
-registerFormatType('wpaia/paragraph-rewriter', {
-  title: 'AI Paragraph Rewriter',
-  name: 'wpaia/paragraph-rewriter',
-  interactive: true,
-  tagName: 'wpaia-paragraph-rewriter',
-  className: null,
-  edit: ParagraphRewriter,
-});
+if (isPromptApiAvailable()) {
+  registerFormatType('wpaia/paragraph-rewriter', {
+    title: 'AI Paragraph Rewriter',
+    name: 'wpaia/paragraph-rewriter',
+    interactive: true,
+    tagName: 'wpaia-paragraph-rewriter',
+    className: null,
+    edit: ParagraphRewriter,
+  });
+}

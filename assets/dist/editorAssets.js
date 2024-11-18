@@ -1002,6 +1002,22 @@ const cn = (...classes) => classes
 
 /***/ }),
 
+/***/ "./assets/src/editorAssets/common/isPromptApiAvailable.ts":
+/*!****************************************************************!*\
+  !*** ./assets/src/editorAssets/common/isPromptApiAvailable.ts ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const isPromptApiAvailable = () => Boolean(window.ai.languageModel);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (isPromptApiAvailable);
+
+
+/***/ }),
+
 /***/ "./assets/src/editorAssets/common/theme/svg/Icon.tsx":
 /*!***********************************************************!*\
   !*** ./assets/src/editorAssets/common/theme/svg/Icon.tsx ***!
@@ -1104,6 +1120,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/theme/svg/icons */ "./assets/src/editorAssets/common/theme/svg/icons.ts");
 /* harmony import */ var _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ParagraphRewriter.module.css */ "./assets/src/editorAssets/plugins/ParagraphRewriter.module.css");
 /* harmony import */ var _common_Llm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/Llm */ "./assets/src/editorAssets/common/Llm.ts");
+/* harmony import */ var _common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/isPromptApiAvailable */ "./assets/src/editorAssets/common/isPromptApiAvailable.ts");
+
 
 
 
@@ -1151,14 +1169,16 @@ const ParagraphRewriter = ({ value, onChange }) => {
                         wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].rewriteButtonIcon, icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }),
                         "Rewrite")))))));
 };
-(0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.registerFormatType)('wpaia/paragraph-rewriter', {
-    title: 'AI Paragraph Rewriter',
-    name: 'wpaia/paragraph-rewriter',
-    interactive: true,
-    tagName: 'wpaia-paragraph-rewriter',
-    className: null,
-    edit: ParagraphRewriter,
-});
+if ((0,_common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__["default"])()) {
+    (0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.registerFormatType)('wpaia/paragraph-rewriter', {
+        title: 'AI Paragraph Rewriter',
+        name: 'wpaia/paragraph-rewriter',
+        interactive: true,
+        tagName: 'wpaia-paragraph-rewriter',
+        className: null,
+        edit: ParagraphRewriter,
+    });
+}
 
 
 /***/ }),
@@ -1182,6 +1202,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/theme/svg/Icon */ "./assets/src/editorAssets/common/theme/svg/Icon.tsx");
 /* harmony import */ var _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common/theme/svg/icons */ "./assets/src/editorAssets/common/theme/svg/icons.ts");
 /* harmony import */ var _TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./TitleSuggestion.module.css */ "./assets/src/editorAssets/plugins/TitleSuggestion.module.css");
+/* harmony import */ var _common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/isPromptApiAvailable */ "./assets/src/editorAssets/common/isPromptApiAvailable.ts");
+
 
 
 
@@ -1226,9 +1248,11 @@ const TitleSuggestion = () => {
                         wp.data.dispatch('core/editor').editPost({ title });
                     } }, title))))))));
 };
-(0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('wpaia-title-suggestion', {
-    render: TitleSuggestion,
-});
+if ((0,_common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__["default"])()) {
+    (0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('wpaia-title-suggestion', {
+        render: TitleSuggestion,
+    });
+}
 
 
 /***/ }),
@@ -1252,6 +1276,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/theme/svg/icons */ "./assets/src/editorAssets/common/theme/svg/icons.ts");
 /* harmony import */ var _WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./WritingAssistantBlock.module.css */ "./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css");
 /* harmony import */ var _common_Llm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/Llm */ "./assets/src/editorAssets/common/Llm.ts");
+/* harmony import */ var _common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/isPromptApiAvailable */ "./assets/src/editorAssets/common/isPromptApiAvailable.ts");
+
 
 
 
@@ -1294,20 +1320,22 @@ const Edit = ({ attributes, setAttributes, clientId }) => {
             "Generate"))) : (wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, { tagName: "p", value: attributes.content }))));
 };
 const Save = ({ attributes }) => (wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, { tagName: "p", value: attributes.content }));
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('wpaia/ai-writing-assistant', {
-    title: 'AI Writing Assistant',
-    category: 'text',
-    icon: () => wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }),
-    attributes: {
-        content: {
-            type: 'string',
-            source: 'html',
-            selector: 'p',
+if ((0,_common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__["default"])()) {
+    (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('wpaia/ai-writing-assistant', {
+        title: 'AI Writing Assistant',
+        category: 'text',
+        icon: () => wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }),
+        attributes: {
+            content: {
+                type: 'string',
+                source: 'html',
+                selector: 'p',
+            },
         },
-    },
-    edit: Edit,
-    save: Save,
-});
+        edit: Edit,
+        save: Save,
+    });
+}
 
 
 /***/ }),

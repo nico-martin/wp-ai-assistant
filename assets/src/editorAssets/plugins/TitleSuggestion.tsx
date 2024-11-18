@@ -6,6 +6,7 @@ import Llm from '../common/Llm';
 import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
 import styles from './TitleSuggestion.module.css';
+import isPromptApiAvailable from '../common/isPromptApiAvailable';
 
 const TitleSuggestion = () => {
   const [titles, setTitles] = useState<Array<string>>([]);
@@ -77,6 +78,8 @@ const TitleSuggestion = () => {
   );
 };
 
-registerPlugin('wpaia-title-suggestion', {
-  render: TitleSuggestion,
-});
+if (isPromptApiAvailable()) {
+  registerPlugin('wpaia-title-suggestion', {
+    render: TitleSuggestion,
+  });
+}
