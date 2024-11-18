@@ -1,2 +1,3 @@
 import './plugins/TitleSuggestion';
-import './plugins/ParagraphAssistant';
+import './plugins/ParagraphRewriter';
+import './plugins/WritingAssistantBlock';

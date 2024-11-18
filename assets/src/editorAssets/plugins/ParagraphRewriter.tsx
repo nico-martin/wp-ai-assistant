@@ -7,13 +7,13 @@ import {
   Button,
   TextareaControl,
 } from '@wordpress/components';
-import { useState, useRef } from '@wordpress/element';
+import { useState, useRef, Fragment } from '@wordpress/element';
 import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
-import styles from './ParagraphAssistant.module.css';
+import styles from './ParagraphRewriter.module.css';
 import Llm from '../common/Llm';
 
-const ParagraphAssistant = ({ value, onChange }) => {
+const ParagraphRewriter = ({ value, onChange }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [newContent, setNewContent] = useState<string>('');
   const [selectedText, setSelectedText] = useState<string>('');
@@ -31,6 +31,7 @@ const ParagraphAssistant = ({ value, onChange }) => {
 
     const updatedContent = insert(
       valueWithStrikethrough,
+      // todo: should be italic
       `\ngenerating...`,
       valueWithStrikethrough.end
     );
@@ -58,8 +59,10 @@ const ParagraphAssistant = ({ value, onChange }) => {
       <BlockControls>
         <ToolbarGroup>
           <ToolbarButton
-            icon={() => <Icon icon={IconName.CREATION} />}
-            title="Sample output"
+            icon={() => (
+              <Icon className={styles.toolbarIcon} icon={IconName.CREATION} />
+            )}
+            title="AI Paragraph Rewriter"
             onClick={() => {
               setSelectedText(value.text.slice(value.start, value.end));
               setIsModalOpen(true);
@@ -75,16 +78,19 @@ const ParagraphAssistant = ({ value, onChange }) => {
         >
           <div className={styles.modal}>
             {selectedText.trim() !== '' && (
-              <p>
-                <b>Text you want to change</b>: <br />
-                {selectedText}
-              </p>
+              <Fragment>
+                <p className={styles.contextLabel}>
+                  Content you want to change
+                </p>
+                <code className={styles.context}>{selectedText}</code>
+              </Fragment>
             )}
             <TextareaControl
               ref={textareaRef}
               label="Instructions:"
               value={newContent}
               onChange={(value) => setNewContent(value)}
+              rows={2}
             />
             <div className={styles.controls}>
               <Button isSecondary onClick={() => setIsModalOpen(false)}>
@@ -101,11 +107,11 @@ const ParagraphAssistant = ({ value, onChange }) => {
   );
 };
 
-registerFormatType('wpaia/rewriter', {
-  title: 'AI Assistant',
-  name: 'wpaia/rewriter',
+registerFormatType('wpaia/paragraph-rewriter', {
+  title: 'AI Paragraph Rewriter',
+  name: 'wpaia/paragraph-rewriter',
   interactive: true,
-  tagName: 'wpaia-rewriter',
+  tagName: 'wpaia-paragraph-rewriter',
   className: null,
-  edit: ParagraphAssistant,
+  edit: ParagraphRewriter,
 });

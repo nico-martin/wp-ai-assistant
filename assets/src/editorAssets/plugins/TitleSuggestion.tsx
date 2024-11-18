@@ -5,8 +5,8 @@ import { Fragment, useState } from '@wordpress/element';
 import Llm from '../common/Llm';
 import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
-
 import styles from './TitleSuggestion.module.css';
+
 const TitleSuggestion = () => {
   const [titles, setTitles] = useState<Array<string>>([]);
   const [loading, setLoading] = useState<boolean>(false);

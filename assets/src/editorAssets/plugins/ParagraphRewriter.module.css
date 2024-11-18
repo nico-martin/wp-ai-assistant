@@ -1,0 +1,34 @@
+.toolbarIcon {
+  scale: 1.5;
+}
+
+.modal {
+  width: 400px;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+
+.contextLabel {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: calc(8px);
+  padding: 0;
+}
+
+.context {
+  display: block;
+  border: rgb(117, 117, 117) 1px solid;
+  color: #3c434a;
+  background-color: rgba(117, 117, 117, 0.1);
+  padding: 1em;
+  margin: 1rem 0 !important;
+  border-radius: 0.5em;
+}

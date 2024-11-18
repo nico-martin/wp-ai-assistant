@@ -135,10 +135,10 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphAssistant.module.css":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphAssistant.module.css ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphRewriter.module.css":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphRewriter.module.css ***!
+  \**************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -154,22 +154,48 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.ecudt_PEGlUiUKWdj5jw {
-  width: 100%;
+___CSS_LOADER_EXPORT___.push([module.id, `.sotOC6st9lEL2DPJ1u_V {
+  scale: 1.5;
+}
+
+.DrKFYh_eB342pMvAqB8H {
   width: 400px;
 }
 
-.ZfKWq64qHLH1QGJaIVPQ {
+.On1d5eAucQBry36cWKwV {
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
   gap: 0.5em;
 }
-`, "",{"version":3,"sources":["webpack://./assets/src/editorAssets/plugins/ParagraphAssistant.module.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,yBAAyB;EACzB,UAAU;AACZ","sourcesContent":[".modal {\n  width: 100%;\n  width: 400px;\n}\n\n.controls {\n  margin-top: 1rem;\n  display: flex;\n  justify-content: flex-end;\n  gap: 0.5em;\n}\n"],"sourceRoot":""}]);
+
+.wrR0imGudXxRz7LE7gG5 {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: calc(8px);
+  padding: 0;
+}
+
+.t90AcysHEv45AZj2VNDi {
+  display: block;
+  border: rgb(117, 117, 117) 1px solid;
+  color: #3c434a;
+  background-color: rgba(117, 117, 117, 0.1);
+  padding: 1em;
+  margin: 1rem 0 !important;
+  border-radius: 0.5em;
+}
+`, "",{"version":3,"sources":["webpack://./assets/src/editorAssets/plugins/ParagraphRewriter.module.css"],"names":[],"mappings":"AAAA;EACE,UAAU;AACZ;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,yBAAyB;EACzB,UAAU;AACZ;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,yBAAyB;EACzB,cAAc;EACd,wBAAwB;EACxB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,oCAAoC;EACpC,cAAc;EACd,0CAA0C;EAC1C,YAAY;EACZ,yBAAyB;EACzB,oBAAoB;AACtB","sourcesContent":[".toolbarIcon {\n  scale: 1.5;\n}\n\n.modal {\n  width: 400px;\n}\n\n.controls {\n  margin-top: 1rem;\n  display: flex;\n  justify-content: flex-end;\n  gap: 0.5em;\n}\n\n.contextLabel {\n  font-size: 11px;\n  font-weight: 500;\n  line-height: 1.4;\n  text-transform: uppercase;\n  display: block;\n  margin-bottom: calc(8px);\n  padding: 0;\n}\n\n.context {\n  display: block;\n  border: rgb(117, 117, 117) 1px solid;\n  color: #3c434a;\n  background-color: rgba(117, 117, 117, 0.1);\n  padding: 1em;\n  margin: 1rem 0 !important;\n  border-radius: 0.5em;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"modal": `ecudt_PEGlUiUKWdj5jw`,
-	"controls": `ZfKWq64qHLH1QGJaIVPQ`
+	"toolbarIcon": `sotOC6st9lEL2DPJ1u_V`,
+	"modal": `DrKFYh_eB342pMvAqB8H`,
+	"controls": `On1d5eAucQBry36cWKwV`,
+	"contextLabel": `wrR0imGudXxRz7LE7gG5`,
+	"context": `t90AcysHEv45AZj2VNDi`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -231,6 +257,55 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"titleList": `pPTBYlJG9613qcDp079m`,
 	"titleListItem": `ir9UxCfVrBugNA7rEzfV`,
 	"titleListButton": `X5LSZR2CSQAGkg6lePR1`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.mEOlswwcLDfjKjIyLnov {
+  padding: 1rem;
+  border: rgb(117, 117, 117) 1px solid;
+  color: #3c434a;
+  background-color: rgba(117, 117, 117, 0.05);
+  border-radius: 0.5em;
+}
+
+.zEHY2dB0ZJOdk6QFSeY3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.uP7aJtMuaHiEgrCnOAqQ {
+  scale: 1.2;
+}
+`, "",{"version":3,"sources":["webpack://./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,oCAAoC;EACpC,cAAc;EACd,2CAA2C;EAC3C,oBAAoB;AACtB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,UAAU;EACV,eAAe;AACjB;;AAEA;EACE,UAAU;AACZ","sourcesContent":[".editForm {\n  padding: 1rem;\n  border: rgb(117, 117, 117) 1px solid;\n  color: #3c434a;\n  background-color: rgba(117, 117, 117, 0.05);\n  border-radius: 0.5em;\n}\n\n.generateButton {\n  display: flex;\n  align-items: center;\n  gap: 0.5em;\n  margin-top: 1em;\n}\n\n.generateButtonIcon {\n  scale: 1.2;\n}\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"editForm": `mEOlswwcLDfjKjIyLnov`,
+	"generateButton": `zEHY2dB0ZJOdk6QFSeY3`,
+	"generateButtonIcon": `uP7aJtMuaHiEgrCnOAqQ`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -408,10 +483,10 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./assets/src/editorAssets/plugins/ParagraphAssistant.module.css":
-/*!***********************************************************************!*\
-  !*** ./assets/src/editorAssets/plugins/ParagraphAssistant.module.css ***!
-  \***********************************************************************/
+/***/ "./assets/src/editorAssets/plugins/ParagraphRewriter.module.css":
+/*!**********************************************************************!*\
+  !*** ./assets/src/editorAssets/plugins/ParagraphRewriter.module.css ***!
+  \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -430,7 +505,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./ParagraphAssistant.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphAssistant.module.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./ParagraphRewriter.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphRewriter.module.css");
 
       
       
@@ -450,12 +525,12 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -508,6 +583,58 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css":
+/*!**************************************************************************!*\
+  !*** ./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./WritingAssistantBlock.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -946,10 +1073,10 @@ const icons = {
 
 /***/ }),
 
-/***/ "./assets/src/editorAssets/plugins/ParagraphAssistant.tsx":
-/*!****************************************************************!*\
-  !*** ./assets/src/editorAssets/plugins/ParagraphAssistant.tsx ***!
-  \****************************************************************/
+/***/ "./assets/src/editorAssets/plugins/ParagraphRewriter.tsx":
+/*!***************************************************************!*\
+  !*** ./assets/src/editorAssets/plugins/ParagraphRewriter.tsx ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -963,7 +1090,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/theme/svg/Icon */ "./assets/src/editorAssets/common/theme/svg/Icon.tsx");
 /* harmony import */ var _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/theme/svg/icons */ "./assets/src/editorAssets/common/theme/svg/icons.ts");
-/* harmony import */ var _ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ParagraphAssistant.module.css */ "./assets/src/editorAssets/plugins/ParagraphAssistant.module.css");
+/* harmony import */ var _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ParagraphRewriter.module.css */ "./assets/src/editorAssets/plugins/ParagraphRewriter.module.css");
 /* harmony import */ var _common_Llm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/Llm */ "./assets/src/editorAssets/common/Llm.ts");
 
 
@@ -973,7 +1100,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const ParagraphAssistant = ({ value, onChange }) => {
+const ParagraphRewriter = ({ value, onChange }) => {
     const [isModalOpen, setIsModalOpen] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     const [newContent, setNewContent] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)('');
     const [selectedText, setSelectedText] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)('');
@@ -995,30 +1122,28 @@ const ParagraphAssistant = ({ value, onChange }) => {
     return (wp.element.createElement(wp.element.Fragment, null,
         wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.BlockControls, null,
             wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarGroup, null,
-                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarButton, { icon: () => wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }), title: "Sample output", onClick: () => {
+                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarButton, { icon: () => (wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].toolbarIcon, icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION })), title: "AI Paragraph Rewriter", onClick: () => {
                         setSelectedText(value.text.slice(value.start, value.end));
                         setIsModalOpen(true);
                         window.setTimeout(() => { var _a; return (_a = textareaRef.current) === null || _a === void 0 ? void 0 : _a.focus(); }, 100);
                     } }))),
         isModalOpen && (wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Modal, { title: "AI Assistant", onRequestClose: () => setIsModalOpen(false) },
-            wp.element.createElement("div", { className: _ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].modal },
-                selectedText.trim() !== '' && (wp.element.createElement("p", null,
-                    wp.element.createElement("b", null, "Text you want to change"),
-                    ": ",
-                    wp.element.createElement("br", null),
-                    selectedText)),
-                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, { ref: textareaRef, label: "Instructions:", value: newContent, onChange: (value) => setNewContent(value) }),
-                wp.element.createElement("div", { className: _ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].controls },
+            wp.element.createElement("div", { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].modal },
+                selectedText.trim() !== '' && (wp.element.createElement(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.Fragment, null,
+                    wp.element.createElement("p", { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].contextLabel }, "Content you want to change"),
+                    wp.element.createElement("code", { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].context }, selectedText))),
+                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, { ref: textareaRef, label: "Instructions:", value: newContent, onChange: (value) => setNewContent(value), rows: 2 }),
+                wp.element.createElement("div", { className: _ParagraphRewriter_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].controls },
                     wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { isSecondary: true, onClick: () => setIsModalOpen(false) }, "Cancel"),
                     wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { isPrimary: true, onClick: applyChanges }, "Apply")))))));
 };
-(0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.registerFormatType)('wpaia/rewriter', {
-    title: 'AI Assistant',
-    name: 'wpaia/rewriter',
+(0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.registerFormatType)('wpaia/paragraph-rewriter', {
+    title: 'AI Paragraph Rewriter',
+    name: 'wpaia/paragraph-rewriter',
     interactive: true,
-    tagName: 'wpaia-rewriter',
+    tagName: 'wpaia-paragraph-rewriter',
     className: null,
-    edit: ParagraphAssistant,
+    edit: ParagraphRewriter,
 });
 
 
@@ -1094,6 +1219,85 @@ const TitleSuggestion = () => {
 
 /***/ }),
 
+/***/ "./assets/src/editorAssets/plugins/WritingAssistantBlock.tsx":
+/*!*******************************************************************!*\
+  !*** ./assets/src/editorAssets/plugins/WritingAssistantBlock.tsx ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/theme/svg/Icon */ "./assets/src/editorAssets/common/theme/svg/Icon.tsx");
+/* harmony import */ var _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/theme/svg/icons */ "./assets/src/editorAssets/common/theme/svg/icons.ts");
+/* harmony import */ var _WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./WritingAssistantBlock.module.css */ "./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css");
+/* harmony import */ var _common_Llm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/Llm */ "./assets/src/editorAssets/common/Llm.ts");
+
+
+
+
+
+
+
+
+const Edit = ({ attributes, setAttributes, clientId }) => {
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
+    const [isEditing, setIsEditing] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)(true);
+    const [text, setText] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)('');
+    const textareaRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useRef)(null);
+    (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useEffect)(() => {
+        window.setTimeout(() => {
+            if (textareaRef.current) {
+                textareaRef.current.focus();
+            }
+        }, 100);
+    }, []);
+    const applyText = async () => {
+        setAttributes({ content: text });
+        setIsEditing(false);
+        const llm = new _common_Llm__WEBPACK_IMPORTED_MODULE_7__["default"]('You are a helpful AI writing assistant. You write rather short paragraphs of text. Only text, no styling or formatting.');
+        const blockEditor = wp.data.dispatch('core/block-editor');
+        const newBlock = wp.blocks.createBlock('core/paragraph', {
+            content: '<em>generating...</em>',
+        });
+        blockEditor.replaceBlocks(clientId, [newBlock]);
+        await llm.promptStreaming(text, (answer) => {
+            blockEditor.updateBlockAttributes(newBlock.clientId, {
+                content: answer,
+            });
+        });
+    };
+    return (wp.element.createElement("div", { ...blockProps }, isEditing ? (wp.element.createElement("div", { className: _WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].editForm },
+        wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, { ref: textareaRef, label: "Instriuctions", value: text, onChange: (value) => setText(value), rows: 3 }),
+        wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { className: _WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].generateButton, isPrimary: true, onClick: applyText },
+            wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { className: _WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].generateButtonIcon, icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }),
+            "Generate"))) : (wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, { tagName: "p", value: attributes.content }))));
+};
+const Save = ({ attributes }) => (wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, { tagName: "p", value: attributes.content }));
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('wpaia/ai-writing-assistant', {
+    title: 'AI Writing Assistant',
+    category: 'text',
+    icon: () => wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }),
+    attributes: {
+        content: {
+            type: 'string',
+            source: 'html',
+            selector: 'p',
+        },
+    },
+    edit: Edit,
+    save: Save,
+});
+
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "React" ***!
@@ -1111,6 +1315,16 @@ module.exports = window["React"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["blockEditor"];
+
+/***/ }),
+
+/***/ "@wordpress/blocks":
+/*!********************************!*\
+  !*** external ["wp","blocks"] ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
@@ -1245,7 +1459,9 @@ var __webpack_exports__ = {};
   \******************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _plugins_TitleSuggestion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugins/TitleSuggestion */ "./assets/src/editorAssets/plugins/TitleSuggestion.tsx");
-/* harmony import */ var _plugins_ParagraphAssistant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./plugins/ParagraphAssistant */ "./assets/src/editorAssets/plugins/ParagraphAssistant.tsx");
+/* harmony import */ var _plugins_ParagraphRewriter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./plugins/ParagraphRewriter */ "./assets/src/editorAssets/plugins/ParagraphRewriter.tsx");
+/* harmony import */ var _plugins_WritingAssistantBlock__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugins/WritingAssistantBlock */ "./assets/src/editorAssets/plugins/WritingAssistantBlock.tsx");
+
 
 
 
