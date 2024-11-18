@@ -135,6 +135,47 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphAssistant.module.css":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphAssistant.module.css ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.ecudt_PEGlUiUKWdj5jw {
+  width: 100%;
+  width: 400px;
+}
+
+.ZfKWq64qHLH1QGJaIVPQ {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+`, "",{"version":3,"sources":["webpack://./assets/src/editorAssets/plugins/ParagraphAssistant.module.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,yBAAyB;EACzB,UAAU;AACZ","sourcesContent":[".modal {\n  width: 100%;\n  width: 400px;\n}\n\n.controls {\n  margin-top: 1rem;\n  display: flex;\n  justify-content: flex-end;\n  gap: 0.5em;\n}\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"modal": `ecudt_PEGlUiUKWdj5jw`,
+	"controls": `ZfKWq64qHLH1QGJaIVPQ`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/TitleSuggestion.module.css":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/TitleSuggestion.module.css ***!
@@ -363,6 +404,58 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_Icon_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_Icon_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_Icon_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./assets/src/editorAssets/plugins/ParagraphAssistant.module.css":
+/*!***********************************************************************!*\
+  !*** ./assets/src/editorAssets/plugins/ParagraphAssistant.module.css ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./ParagraphAssistant.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/editorAssets/plugins/ParagraphAssistant.module.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_2_use_2_ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -699,7 +792,7 @@ __webpack_require__.r(__webpack_exports__);
 class Llm {
     constructor(systemPrompt) {
         this.messages = [];
-        this.prompt = async (text) => {
+        this.promptStreaming = async (text, callback = () => { }) => {
             var _a;
             if (!((_a = window === null || window === void 0 ? void 0 : window.ai) === null || _a === void 0 ? void 0 : _a.languageModel)) {
                 throw new Error('The Prompt API is not available');
@@ -722,7 +815,12 @@ class Llm {
                     role: 'user',
                 },
             ];
-            const answer = await this.session.prompt(text);
+            const stream = this.session.promptStreaming(text);
+            let answer = '';
+            for await (const chunk of stream) {
+                answer = chunk;
+                callback(answer);
+            }
             this.messages = [
                 ...this.messages,
                 {
@@ -732,6 +830,7 @@ class Llm {
             ];
             return answer;
         };
+        this.prompt = async (text) => this.promptStreaming(text);
         this.systemPrompt = systemPrompt;
     }
 }
@@ -840,9 +939,87 @@ var IconName;
     IconName["CREATION"] = "creation";
 })(IconName || (IconName = {}));
 const icons = {
-    creation: _icons_creation_svg__WEBPACK_IMPORTED_MODULE_0__["default"],
+    'creation': _icons_creation_svg__WEBPACK_IMPORTED_MODULE_0__["default"],
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (icons);
+
+
+/***/ }),
+
+/***/ "./assets/src/editorAssets/plugins/ParagraphAssistant.tsx":
+/*!****************************************************************!*\
+  !*** ./assets/src/editorAssets/plugins/ParagraphAssistant.tsx ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/rich-text */ "@wordpress/rich-text");
+/* harmony import */ var _wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/theme/svg/Icon */ "./assets/src/editorAssets/common/theme/svg/Icon.tsx");
+/* harmony import */ var _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/theme/svg/icons */ "./assets/src/editorAssets/common/theme/svg/icons.ts");
+/* harmony import */ var _ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ParagraphAssistant.module.css */ "./assets/src/editorAssets/plugins/ParagraphAssistant.module.css");
+/* harmony import */ var _common_Llm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/Llm */ "./assets/src/editorAssets/common/Llm.ts");
+
+
+
+
+
+
+
+
+const ParagraphAssistant = ({ value, onChange }) => {
+    const [isModalOpen, setIsModalOpen] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const [newContent, setNewContent] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)('');
+    const [selectedText, setSelectedText] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)('');
+    const textareaRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useRef)(null);
+    const applyChanges = async () => {
+        const llm = new _common_Llm__WEBPACK_IMPORTED_MODULE_7__["default"]('You are a helpful AI assistant that rewrites the selected text. Return only text, no styling or formatting.');
+        setIsModalOpen(false);
+        const valueWithStrikethrough = (0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.toggleFormat)(value, {
+            type: 'core/strikethrough',
+        });
+        const updatedContent = (0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.insert)(valueWithStrikethrough, `\ngenerating...`, valueWithStrikethrough.end);
+        onChange(updatedContent);
+        await llm.promptStreaming(`SELECTED TEXT:\n\n${selectedText}\n\nINSTRUCTIONS\n\n${newContent}`, (answer) => {
+            const updatedContent = (0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.insert)(valueWithStrikethrough, `\n${answer}`, valueWithStrikethrough.end);
+            onChange(updatedContent);
+        });
+        setNewContent('');
+    };
+    return (wp.element.createElement(wp.element.Fragment, null,
+        wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.BlockControls, null,
+            wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarGroup, null,
+                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarButton, { icon: () => wp.element.createElement(_common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], { icon: _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__.IconName.CREATION }), title: "Sample output", onClick: () => {
+                        setSelectedText(value.text.slice(value.start, value.end));
+                        setIsModalOpen(true);
+                        window.setTimeout(() => { var _a; return (_a = textareaRef.current) === null || _a === void 0 ? void 0 : _a.focus(); }, 100);
+                    } }))),
+        isModalOpen && (wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Modal, { title: "AI Assistant", onRequestClose: () => setIsModalOpen(false) },
+            wp.element.createElement("div", { className: _ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].modal },
+                selectedText.trim() !== '' && (wp.element.createElement("p", null,
+                    wp.element.createElement("b", null, "Text you want to change"),
+                    ": ",
+                    wp.element.createElement("br", null),
+                    selectedText)),
+                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, { ref: textareaRef, label: "Instructions:", value: newContent, onChange: (value) => setNewContent(value) }),
+                wp.element.createElement("div", { className: _ParagraphAssistant_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].controls },
+                    wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { isSecondary: true, onClick: () => setIsModalOpen(false) }, "Cancel"),
+                    wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { isPrimary: true, onClick: applyChanges }, "Apply")))))));
+};
+(0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.registerFormatType)('wpaia/rewriter', {
+    title: 'AI Assistant',
+    name: 'wpaia/rewriter',
+    interactive: true,
+    tagName: 'wpaia-rewriter',
+    className: null,
+    edit: ParagraphAssistant,
+});
 
 
 /***/ }),
@@ -880,7 +1057,7 @@ const TitleSuggestion = () => {
     return (wp.element.createElement(_wordpress_editor__WEBPACK_IMPORTED_MODULE_1__.PluginDocumentSettingPanel, { name: "wpaia-title-suggestion", title: "AI Assistant" },
         wp.element.createElement(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.Fragment, null,
             wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ButtonGroup, null,
-                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { className: _TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].generateButton, variant: "primary", disabled: loading, onClick: async () => {
+                wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, { className: _TitleSuggestion_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].generateButton, disabled: loading, onClick: async () => {
                         setTitles([]);
                         setLoading(true);
                         try {
@@ -889,12 +1066,10 @@ const TitleSuggestion = () => {
                                 .getCurrentPost()
                                 .content.toString()
                                 .replace(/<!--.*?-->/gs, '');
-                            console.log(content);
                             const llm = new _common_Llm__WEBPACK_IMPORTED_MODULE_4__["default"]('You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line.');
                             const response = await llm.prompt('Blogpost:\n\n' + content);
                             console.log(response);
                             const suggestions = response.split('\n').filter(Boolean);
-                            console.log(suggestions);
                             setTitles(suggestions);
                             setLoading(false);
                         }
@@ -926,6 +1101,16 @@ const TitleSuggestion = () => {
 /***/ ((module) => {
 
 module.exports = window["React"];
+
+/***/ }),
+
+/***/ "@wordpress/block-editor":
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
 
@@ -966,6 +1151,16 @@ module.exports = window["wp"]["element"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["plugins"];
+
+/***/ }),
+
+/***/ "@wordpress/rich-text":
+/*!**********************************!*\
+  !*** external ["wp","richText"] ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["richText"];
 
 /***/ })
 
@@ -1050,6 +1245,8 @@ var __webpack_exports__ = {};
   \******************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _plugins_TitleSuggestion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugins/TitleSuggestion */ "./assets/src/editorAssets/plugins/TitleSuggestion.tsx");
+/* harmony import */ var _plugins_ParagraphAssistant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./plugins/ParagraphAssistant */ "./assets/src/editorAssets/plugins/ParagraphAssistant.tsx");
+
 
 
 })();

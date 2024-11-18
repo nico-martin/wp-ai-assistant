@@ -1,0 +1,11 @@
+.modal {
+  width: 100%;
+  width: 400px;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}

@@ -7,7 +7,7 @@ export enum IconName {
 }
 
 const icons: Record<string, any> = {
-  creation: creation,
+  'creation': creation,
 };
 
 export default icons;

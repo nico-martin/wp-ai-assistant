@@ -13,7 +13,10 @@ class Llm {
     this.systemPrompt = systemPrompt;
   }
 
-  public prompt = async (text: string): Promise<string> => {
+  public promptStreaming = async (
+    text: string,
+    callback: (answer: string) => void = () => {}
+  ): Promise<string> => {
     // @ts-ignore
     if (!window?.ai?.languageModel) {
       throw new Error('The Prompt API is not available');
@@ -40,7 +43,12 @@ class Llm {
       },
     ];
 
-    const answer = await this.session.prompt(text);
+    const stream = this.session.promptStreaming(text);
+    let answer = '';
+    for await (const chunk of stream) {
+      answer = chunk;
+      callback(answer);
+    }
     this.messages = [
       ...this.messages,
       {
@@ -51,6 +59,9 @@ class Llm {
 
     return answer;
   };
+
+  public prompt = async (text: string): Promise<string> =>
+    this.promptStreaming(text);
 }
 
 export default Llm;

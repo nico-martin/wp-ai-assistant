@@ -20,7 +20,6 @@ const TitleSuggestion = () => {
         <ButtonGroup>
           <Button
             className={styles.generateButton}
-            variant="primary"
             disabled={loading}
             onClick={async () => {
               setTitles([]);
@@ -33,7 +32,6 @@ const TitleSuggestion = () => {
                   .content.toString()
                   .replace(/<!--.*?-->/gs, '');
 
-                console.log(content);
                 const llm = new Llm(
                   'You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line.'
                 );
@@ -42,7 +40,6 @@ const TitleSuggestion = () => {
                 console.log(response);
 
                 const suggestions = response.split('\n').filter(Boolean);
-                console.log(suggestions);
 
                 setTitles(suggestions);
                 setLoading(false);
