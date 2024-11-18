@@ -1,6 +1,5 @@
-# WP On-Device AI Assistant
-
 ![!WP On-Device AI Assistant Logo](https://uploads.nico.dev/wp-on-device-ai-assistant/logo.svg)
+# WP On-Device AI Assistant
 
 This WordPress plugin provides an on-device AI assistant for your website. It uses the experimental [Prompt API](https://github.com/explainers-by-googlers/prompt-api) to generate text and thus provides you three main features:
 
