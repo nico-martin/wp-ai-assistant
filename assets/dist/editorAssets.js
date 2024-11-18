@@ -1191,7 +1191,7 @@ const TitleSuggestion = () => {
                                 .getCurrentPost()
                                 .content.toString()
                                 .replace(/<!--.*?-->/gs, '');
-                            const llm = new _common_Llm__WEBPACK_IMPORTED_MODULE_4__["default"]('You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line.');
+                            const llm = new _common_Llm__WEBPACK_IMPORTED_MODULE_4__["default"]('You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line and without any styling or formatting.');
                             const response = await llm.prompt('Blogpost:\n\n' + content);
                             console.log(response);
                             const suggestions = response.split('\n').filter(Boolean);

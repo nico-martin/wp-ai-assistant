@@ -33,7 +33,7 @@ const TitleSuggestion = () => {
                   .replace(/<!--.*?-->/gs, '');
 
                 const llm = new Llm(
-                  'You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line.'
+                  'You are a helpful AI assistant that gives 5 suggestions for titles based on the content of a blog. Always return only the titles separated by a new line and without any styling or formatting.'
                 );
 
                 const response = await llm.prompt('Blogpost:\n\n' + content);
