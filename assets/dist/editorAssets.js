@@ -1275,10 +1275,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_theme_svg_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/theme/svg/Icon */ "./assets/src/editorAssets/common/theme/svg/Icon.tsx");
 /* harmony import */ var _common_theme_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/theme/svg/icons */ "./assets/src/editorAssets/common/theme/svg/icons.ts");
 /* harmony import */ var _WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./WritingAssistantBlock.module.css */ "./assets/src/editorAssets/plugins/WritingAssistantBlock.module.css");
-/* harmony import */ var _common_Llm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/Llm */ "./assets/src/editorAssets/common/Llm.ts");
-/* harmony import */ var _common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/isPromptApiAvailable */ "./assets/src/editorAssets/common/isPromptApiAvailable.ts");
-
-
+var _a;
 
 
 
@@ -1301,17 +1298,35 @@ const Edit = ({ attributes, setAttributes, clientId }) => {
     const applyText = async () => {
         setAttributes({ content: text });
         setIsEditing(false);
-        const llm = new _common_Llm__WEBPACK_IMPORTED_MODULE_7__["default"]('You are a helpful AI writing assistant. You write rather short paragraphs of text. Only text, no styling or formatting.');
         const blockEditor = wp.data.dispatch('core/block-editor');
         const newBlock = wp.blocks.createBlock('core/paragraph', {
             content: '<em>generating...</em>',
         });
         blockEditor.replaceBlocks(clientId, [newBlock]);
-        await llm.promptStreaming(text, (answer) => {
-            blockEditor.updateBlockAttributes(newBlock.clientId, {
-                content: answer,
+        try {
+            console.log(await self.ai.writer);
+            const writer = await self.ai.writer.create({
+                tone: 'formal',
+                length: 'long',
+                monitor(m) {
+                    m.addEventListener('downloadprogress', (e) => {
+                        console.log(`Downloaded ${e.loaded} of ${e.total} bytes.`);
+                    });
+                },
             });
-        });
+            console.log('Writer', writer);
+            const stream = await writer.write('A draft for an inquiry to my bank about how to enable wire transfers on my account');
+            console.log('stream', stream);
+            for (const chunk of stream) {
+                console.log(chunk);
+                blockEditor.updateBlockAttributes(newBlock.clientId, {
+                    content: chunk,
+                });
+            }
+        }
+        catch (e) {
+            console.error(e);
+        }
     };
     return (wp.element.createElement("div", { ...blockProps }, isEditing ? (wp.element.createElement("div", { className: _WritingAssistantBlock_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].editForm },
         wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, { ref: textareaRef, label: "Instriuctions", value: text, onChange: (value) => setText(value), rows: 3 }),
@@ -1320,7 +1335,7 @@ const Edit = ({ attributes, setAttributes, clientId }) => {
             "Generate"))) : (wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, { tagName: "p", value: attributes.content }))));
 };
 const Save = ({ attributes }) => (wp.element.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, { tagName: "p", value: attributes.content }));
-if ((0,_common_isPromptApiAvailable__WEBPACK_IMPORTED_MODULE_8__["default"])()) {
+if ((_a = self === null || self === void 0 ? void 0 : self.ai) === null || _a === void 0 ? void 0 : _a.writer) {
     (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('wpaia/ai-writing-assistant', {
         title: 'AI Writing Assistant',
         category: 'text',

@@ -5,8 +5,6 @@ import { useState, useRef, useEffect } from '@wordpress/element';
 import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
 import styles from './WritingAssistantBlock.module.css';
-import Llm from '../common/Llm';
-import isPromptApiAvailable from '../common/isPromptApiAvailable';
 
 const Edit = ({ attributes, setAttributes, clientId }) => {
   const blockProps = useBlockProps();
@@ -25,11 +23,6 @@ const Edit = ({ attributes, setAttributes, clientId }) => {
   const applyText = async () => {
     setAttributes({ content: text });
     setIsEditing(false);
-
-    const llm = new Llm(
-      'You are a helpful AI writing assistant. You write rather short paragraphs of text. Only text, no styling or formatting.'
-    );
-
     // @ts-ignore
     const blockEditor = wp.data.dispatch('core/block-editor');
     // @ts-ignore
@@ -38,10 +31,31 @@ const Edit = ({ attributes, setAttributes, clientId }) => {
     });
     blockEditor.replaceBlocks(clientId, [newBlock]);
 
-    await llm.promptStreaming(text, (answer) => {
+    // @ts-ignore
+    const writer = await self.ai.writer.create({
+      tone: 'neutral',
+      length: 'short',
+      format: 'plain-text',
+      monitor(m) {
+        m.addEventListener('downloadprogress', (e) => {
+          console.log(`Downloaded ${e.loaded} of ${e.total} bytes.`);
+        });
+      },
+    });
+    const stream = await writer.writeStreaming(
+      text + '\n' + 'Only text, no styling or formatting.'
+    );
+
+    let answer = '';
+    for (const chunk of stream) {
+      answer += chunk;
       blockEditor.updateBlockAttributes(newBlock.clientId, {
         content: answer,
       });
+    }
+
+    blockEditor.updateBlockAttributes(newBlock.clientId, {
+      content: answer,
     });
   };
 
@@ -79,7 +93,8 @@ const Save = ({ attributes }) => (
   <RichText.Content tagName="p" value={attributes.content} />
 );
 
-if (isPromptApiAvailable()) {
+// @ts-ignore
+if (self?.ai?.writer) {
   registerBlockType('wpaia/ai-writing-assistant', {
     title: 'AI Writing Assistant',
     category: 'text',

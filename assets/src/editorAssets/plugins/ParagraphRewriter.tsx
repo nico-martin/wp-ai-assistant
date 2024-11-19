@@ -11,8 +11,6 @@ import { useState, useRef, Fragment } from '@wordpress/element';
 import Icon from '../common/theme/svg/Icon';
 import { IconName } from '../common/theme/svg/icons';
 import styles from './ParagraphRewriter.module.css';
-import Llm from '../common/Llm';
-import isPromptApiAvailable from '../common/isPromptApiAvailable';
 
 const ParagraphRewriter = ({ value, onChange }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -21,10 +19,6 @@ const ParagraphRewriter = ({ value, onChange }) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const applyChanges = async () => {
-    const llm = new Llm(
-      'You are a helpful AI assistant that rewrites the selected text. Return only text, no styling or formatting.'
-    );
-
     setIsModalOpen(false);
     const valueWithStrikethrough = toggleFormat(value, {
       type: 'core/strikethrough',
@@ -39,18 +33,36 @@ const ParagraphRewriter = ({ value, onChange }) => {
 
     onChange(updatedContent);
 
-    await llm.promptStreaming(
-      `SELECTED TEXT:\n\n${selectedText}\n\nINSTRUCTIONS\n\n${newContent}`,
-      (answer) => {
-        const updatedContent = insert(
-          valueWithStrikethrough,
-          `\n${answer}`,
-          valueWithStrikethrough.end
-        );
+    // @ts-ignore
+    const rewriter = await ai.rewriter.create({
+      tone: 'as-is',
+      length: 'as-is',
+      format: 'plain-text',
+      sharedContext: selectedText,
+    });
 
-        onChange(updatedContent);
-      }
+    const stream = await rewriter.rewriteStreaming(newContent, {
+      context: 'Return only text, no styling or formatting',
+    });
+    let answer = '';
+    for await (const chunk of stream) {
+      answer += chunk;
+      const updatedContent = insert(
+        valueWithStrikethrough,
+        `\n${answer}`,
+        valueWithStrikethrough.end
+      );
+
+      onChange(updatedContent);
+    }
+
+    const doneContent = insert(
+      valueWithStrikethrough,
+      `\n${answer}`,
+      valueWithStrikethrough.end
     );
+
+    onChange(doneContent);
 
     setNewContent('');
   };
@@ -116,7 +128,8 @@ const ParagraphRewriter = ({ value, onChange }) => {
   );
 };
 
-if (isPromptApiAvailable()) {
+// @ts-ignore
+if (self?.ai?.rewriter) {
   registerFormatType('wpaia/paragraph-rewriter', {
     title: 'AI Paragraph Rewriter',
     name: 'wpaia/paragraph-rewriter',
